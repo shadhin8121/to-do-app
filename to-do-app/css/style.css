@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container {
+  max-width: 700px;
+  min-height: 300px;
+  background: aqua;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.container_task_list_undone_task ul li {
+  list-style-type: none;
+}
+
+.container_task_list_completed_task ul li {
+  list-style-type: none;
+}
+
+.container_text_and_input {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container_task_list {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  border: none;
+  padding-left: 8px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 3px 9px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="text"]:focus {
+  border: none;
+  outline: none;
+}
+
+.container_task_list_undone_task {
+  min-width: 300px;
+  background: #00000024;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.container_task_list_completed_task {
+  min-width: 300px;
+  background: #00000024;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.container_task_list_undone_task ul li {
+  width: 100%;
+  background: #0080001f;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  min-height: 32px;
+  line-height: 32px;
+  padding: 0px 7px;
+  border-bottom: 1px solid black;
+}
+
+.container_task_list_completed_task ul li {
+  width: 100%;
+  background: #0080001f;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  min-height: 32px;
+  line-height: 32px;
+  padding: 0px 7px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_task_list_completed_task ul li button {
+  width: 53px;
+  height: 24px;
+  border: none;
+  border-radius: 10px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container_task_list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  * {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container_task_list_completed_task {
+    max-width: 300px;
+  }
+  .container_task_list_undone_task {
+    max-width: 300px;
+  }
+}
+
+.container_task_list_undone_task h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.container_task_list_completed_task h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
